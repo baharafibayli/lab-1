@@ -1,0 +1,1 @@
+In  imperative solution(task 1) , I used a for loop, if/elif conditions and counters, so I had to describe step by step how to get the result. Infunctional solution (task 2), I used map(), filter() and sorted() with lambda, which made the code shorter and I only described what result I wanted
