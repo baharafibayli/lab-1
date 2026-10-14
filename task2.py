@@ -10,7 +10,7 @@ data=[
 to_fahrenheit=list(map(lambda day: day["temp"]*9/5+32,data))
 hot_days=list(filter(lambda day: day["temp"]>25,data))
 sorted_days=sorted(data, key=lambda day: day["temp"], reverse=True)
-lines=map(lambda day: day["day"] + ": " + str(day["temp"]), sorted_days)
+lines=list(map(lambda day: day["day"] + ": " + str(day["temp"]), sorted_days))
 print("fahrenheit:", to_fahrenheit)
 print("hot_days:", hot_days)
 print("from warmest to coldest:\n" + "\n".join(lines))
